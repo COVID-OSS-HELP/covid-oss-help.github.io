@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>COVID-19 OSS HELP</title>
+    <style>
+    .covid-oss-help-white {
+        background: white;
+        color: #222;
+        padding: 20px;
+     }
+    .covid-oss-help-gray {
+        background: #999;
+        color: white;
+        padding: 20px;
+    }
+    .covid-oss-help-nav-link {
+      color: #ccc;
+      font-size: x-large;
+    }
+    .covid-oss-help-nav-link:hover {
+      color: #eee;
+      font-size: x-large;
+    }
+    </style>
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="content-fluid covid-oss-help-gray">
+      <div class="container">
+         <div>
+           <img src="/covid-oss-help.svg" style="display: block; margin: 40px auto 40px auto; max-width: 400px;"/>
+           <h4 style="text-align: center">{{ page.title }}</h4>
+         </div>
+        <nav class="nav">
+          <a class='nav-link covid-oss-help-nav-link {% if page.name == "index.html" %}disabled{% endif %}' href="/index">Home</a>
+          <a class="nav-link covid-oss-help-nav-link {% if page.name == 'coc.html' %}disabled{% endif %}" href="/coc">Code of Conduct</a>
+          <a class="nav-link covid-oss-help-nav-link" href="https://discourse.covid-oss-help.org">Helpdesk</a>
+        </nav>
+      </div>
+    </div>
+    <div class="content-fluid covid-oss-help-white">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+    <div class="content-fluid covid-oss-help-gray">
+      <div class="container">
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
